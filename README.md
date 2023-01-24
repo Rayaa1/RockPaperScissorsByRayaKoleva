@@ -25,5 +25,5 @@ The rules are as follows:
 If both players choose the same option (e.g., "paper"), the game outcome is "draw":     
 ![image](https://user-images.githubusercontent.com/117087939/214438002-49d3de24-748d-4d18-9969-fee591ea0391.png)
 
-                                                                 HAVE FUN!
+                                                          HAVE FUN!
 
