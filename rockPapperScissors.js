@@ -1,13 +1,15 @@
-function rockPapperSciccors(playerTurns) {
+function rockPapperScissors(playerTurns) {
     const rock = "Rock";
     const papper = "Papper";
-    const sciccors = "Sciccors";
+    const scissors = "Scissors";
     if (playerTurns == "r" || playerTurns == "rock") {
         playerTurns = "Rock";
     } else if (playerTurns == "p" || playerTurns == "papper") {
         playerTurns = "Papper";
-    } else if (playerTurns == "s" || playerTurns == "sciccors") {
-        playerTurns = "Sciccors"
+    } else if (playerTurns == "s" || playerTurns ==
+        "scissors") {
+        playerTurns =
+            "Scissors"
     } else {
         console.log("Invalid Input. Try Again...");
     }
@@ -22,18 +24,21 @@ function rockPapperSciccors(playerTurns) {
             computerTurn = papper;
             break;
         case 3:
-            computerTurn = sciccors;
+            computerTurn = scissors;
             break;
     }
     console.log(`The computer chooses ${computerTurn}`);
 
-    if (playerTurns === rock && computerTurn === sciccors || playerTurns === papper && computerTurn === rock || playerTurns === sciccors && computerTurn === papper) {
+    if (playerTurns === rock && computerTurn ===
+        scissors || playerTurns === papper && computerTurn === rock || playerTurns ===
+        scissors && computerTurn === papper) {
         console.log("You win!🏆")
-    } else if (computerTurn === rock && playerTurns === sciccors || computerTurn === papper && playerTurns === rock || computerTurn === sciccors && playerTurns === papper) {
+    } else if (computerTurn === rock && playerTurns ===
+        scissors || computerTurn === papper && playerTurns === rock || computerTurn ===
+        scissors && playerTurns === papper) {
         console.log("You lose!😔")
     } else {
         console.log("This game was a draw!🙂")
     }
-
 }
-rockPapperSciccors()
+rockPapperScissors()
